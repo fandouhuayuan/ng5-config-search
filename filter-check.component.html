@@ -1,0 +1,12 @@
+<div id="searchCofig" class="fas fa-pull-right">
+    <div class="criteria"><span (click)="checkMyFilter()" class="fas fa-align-justify fa-pull-right"></span></div>
+    <div style="clear: both"></div>
+    <div class="serachItem" *ngIf="myFilter">
+        <ul>
+            <li *ngFor="let items of myCheck"  (click)="setMyFilter(items)">
+                <i class="fas fa-check" *ngIf="items.state"></i><span>{{items.fliterName}}</span>
+            </li>
+        </ul>
+    </div>
+</div>
+

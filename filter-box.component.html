@@ -1,0 +1,18 @@
+<div class="ne-filter">
+    <div class="col serachConn"  id="serachConn" >
+        <filter-check [myCheck]="countItem" (filterStateChange)="setMyFilterStyle($event)"></filter-check>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-ms-12 col-xs-12" *ngIf="countItemState.userLabel">
+                <label class="control-label filter-label" for="userLabel">{{'i18n_neUserLabel'|i18n}}</label>
+                <input type="text" class="form-control filter-input" id="userLabel"  [(ngModel)]="searchData.userLabel" required>
+            </div>
+            <div class="col-lg-2 col-md-2 col-ms-12 col-xs-12"  *ngIf="countItemState.neFamily">
+                <multiple-ctl   [isTranslate]="false"  (onVoted)="onMuiltData($event,'neFamily')" [Mystr]="'neFamily'"  [parAttr]="SUPPORTED_NE_TYPES"></multiple-ctl>
+            </div>
+            <div class="col-lg-2 col-md-2 col-ms-12 col-xs-12" *ngIf="countItemState.type">
+                <multiple-ctl   [isTranslate]="false" (onVoted)="onMuiltData($event,'neType')" [Mystr]="'type'" [parAttr]="NETYPE"></multiple-ctl>
+            </div>
+        </div>
+    </div>
+
+</div>

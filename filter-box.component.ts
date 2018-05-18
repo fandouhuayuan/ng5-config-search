@@ -12,26 +12,12 @@ export class FilNePanelComponent implements OnInit {
         this.countItem=[
                 {fliterName:"userLabel",state:true},
                 {fliterName:"neFamily",state:true},
-                {fliterName:"type",state:true},
-                {fliterName:"maintenanceState",state:true},
-                {fliterName:"supervisionState",state:true},
-                {fliterName: "operationState",state:true},
-                {fliterName:"communicationState",state:true},
-                {fliterName: "alarmState",state:true},
-                {fliterName:"PMstroy",state:true},
-                {fliterName:"tag",state:true}
+                {fliterName:"type",state:true}
                 ]
         this.countItemState={
                     "userLabel":true,
                     "neFamily":true,
-                    "type":true,
-                    "maintenanceState":true,
-                    "supervisionState":true,
-                    "operationState":true,
-                    "communicationState":true,
-                    "alarmState":true,
-                    "PMstroy":true,
-                    "tag":true,
+                    "type":true
                 }
              }
         setMyFilterStyle(data:any):void{

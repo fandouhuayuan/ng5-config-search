@@ -4,7 +4,7 @@ import {Component, EventEmitter, Input, OnInit, Output, ViewChild} from '@angula
   templateUrl: 'fil-ne-panel.component.html',
   styleUrls: ['fil-ne-panel.component.css']
 })
-export class FilNePanelComponent implements OnInit {
+export class FilterBoxComponent implements OnInit {
         public countItem:any;
          countItemState:any;
     constructor() {}
